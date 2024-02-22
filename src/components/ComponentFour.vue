@@ -1,15 +1,15 @@
 <template>
     <div>
-        <Counter />
+        <VueCounter />
     </div>
 </template>
 
 <script>
-import Counter from './Counter.vue';
+import VueCounter from './VueCounter.vue';
 export default {
     name: "ComponentFour",
     components: {
-        Counter
+        VueCounter
     }
 };
 </script>
