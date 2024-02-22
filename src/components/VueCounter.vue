@@ -22,7 +22,7 @@ export default {
         }
     },
     computed: {
-      ...mapState(["counter", "counter2", "counter3"])
+      ...mapState(["counter"])
     }
 };
 </script>
