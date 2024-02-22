@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Vuex Counter</h1>
-        <h1 class="counter">{{ $store.state.counter }}</h1>
+        <h1 class="counter">{{ counter }}</h1>
         <button>-</button>
         <input 
             type="number" 
@@ -12,11 +12,17 @@
 </template>
 
 <script>
+
+import { mapState } from "vuex";
+
 export default {
     data() {
         return {
             value: 1
         }
+    },
+    computed: {
+      ...mapState(["counter", "counter2", "counter3"])
     }
 };
 </script>
